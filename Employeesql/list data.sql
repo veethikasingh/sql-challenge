@@ -180,7 +180,8 @@ order by d.emp_no;
 
 SELECT last_name, COUNT(last_name) AS "Total"
 FROM employee
-GROUP BY last_name;
+GROUP BY last_name
+order by count(last_name) desc;
 
 
 
